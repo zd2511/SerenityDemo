@@ -1,225 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Serenity Health & Beauty — professional beauty therapy, skincare, lashes, brows, massage and more. 28 years' beauty therapy experience and 14 years of lashing experience.">
-  <meta name="theme-color" content="#39b7c3">
-  <title>Serenity Health & Beauty | Beauty Therapy & Lashes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serenity Health & Beauty — professionally delivered beauty treatments, lash services, skincare, waxing, massage and more.">
+  <meta name="theme-color" content="#35aabd">
+  <meta property="og:title" content="Serenity Health & Beauty">
+  <meta property="og:description" content="Beauty that enhances confidence that lasts.">
+  <meta property="og:type" content="website">
+  <title>Serenity Health & Beauty | Beauty Therapist</title>
+  <link rel="icon" type="image/png" href="assets/serenity-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="topbar">
-    <span>28 YEARS OF BEAUTY THERAPY EXPERIENCE</span>
-    <a href="tel:+27622042388">062 204 2388</a>
-  </div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Serenity Health & Beauty home">
+        <img src="assets/serenity-logo.png" alt="Serenity Health & Beauty logo">
+      </a>
 
-  <header class="header">
-    <a class="logo" href="#home" aria-label="Serenity Health and Beauty">
-      <span class="logo-leaf" aria-hidden="true">
-        <i></i><i></i><i></i>
-      </span>
-      <span class="logo-word">Serenity</span>
-      <span class="logo-sub">Health &amp; Beauty</span>
-    </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <button class="menu" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
-
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Treatments</a>
-      <a href="#lashes">Lashes</a>
-      <a href="#care">Why Serenity</a>
-      <a class="nav-button" href="https://wa.me/27622042388?text=Hi%20Serenity%20Health%20%26%20Beauty%2C%20I%27d%20like%20to%20make%20an%20appointment%20enquiry." target="_blank" rel="noopener">Book / Enquire</a>
-    </nav>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Treatments</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="tel:+27622042388">Call 062 204 2388</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-art" aria-hidden="true">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="line-art">
-          <svg viewBox="0 0 500 700" role="presentation">
-            <path d="M248 624c-3-117 10-197 76-286 47-64 96-111 109-178 10-52-8-96-41-124"/>
-            <path d="M250 513c-52-69-110-91-165-83 42 55 94 78 165 83Z"/>
-            <path d="M319 342c57-11 103-45 124-93-54 2-96 31-124 93Z"/>
-            <path d="M303 398c-34-55-78-84-127-91 18 54 61 84 127 91Z"/>
-          </svg>
-        </div>
-      </div>
-
-      <div class="hero-copy">
-        <p class="kicker">INTERNATIONALLY QUALIFIED BEAUTY THERAPIST</p>
-        <h1>Where beauty meets <em>serenity.</em></h1>
-        <p class="lead">A considered beauty experience built around professional care, quality products and treatments that enhance your natural beauty.</p>
-        <div class="actions">
-          <a class="button primary" href="https://wa.me/27622042388?text=Hi%20Serenity%20Health%20%26%20Beauty%2C%20I%27d%20like%20to%20make%20an%20appointment%20enquiry." target="_blank" rel="noopener">Make an enquiry <span>↗</span></a>
-          <a class="button text-button" href="#services">Explore treatments <span>↓</span></a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>28</strong><span>years in beauty</span></div>
-          <div><strong>14</strong><span>years of lashing</span></div>
-          <div><strong>∞</strong><span>care &amp; precision</span></div>
-        </div>
-      </div>
-
-      <div class="hero-side">
-        <div class="portrait-frame">
-          <div class="portrait-gradient"></div>
-          <div class="portrait-silhouette" aria-hidden="true">
-            <div class="head"></div><div class="neck"></div><div class="shoulder"></div>
-            <div class="hair"></div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Serenity Health & Beauty</p>
+          <h1 id="hero-title">Beauty that enhances <em>confidence</em> that lasts.</h1>
+          <p class="hero-text">
+            Professional beauty therapy with a focus on quality treatments, careful workmanship and beautifully natural results.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+27622042388">Call to enquire <span>↗</span></a>
+            <a class="btn btn-ghost" href="#services">Explore treatments</a>
           </div>
-          <div class="portrait-label">
-            <span>EST.</span>
-            <strong>SERENITY</strong>
-            <small>HEALTH &amp; BEAUTY</small>
+          <div class="hero-proof">
+            <div><strong>28</strong><span>years' experience</span></div>
+            <div><strong>14</strong><span>years of lashing</span></div>
           </div>
         </div>
-        <div class="floating-note"><b>14 YEARS</b><span>of professional<br>lashing experience</span></div>
+
+        <div class="hero-visual reveal">
+          <div class="image-frame">
+            <img src="assets/beauty-face.jpg" alt="Close-up beauty portrait showing professional eye and lash styling">
+          </div>
+          <div class="experience-card">
+            <span class="mini-mark">⌁</span>
+            <strong>14 YEARS</strong>
+            <span>OF LASHING<br>EXPERIENCE</span>
+          </div>
+          <div class="sparkle">✦</div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="about section">
-      <div class="section-number">01</div>
-      <div class="section-title">
-        <p class="kicker">THE SERENITY EXPERIENCE</p>
-        <h2>Professional beauty, with a softer touch.</h2>
-      </div>
-      <div class="about-copy">
-        <p>Serenity Health &amp; Beauty brings together decades of beauty therapy experience with a calm, personal approach to every treatment.</p>
-        <p>From advanced skincare and professional lashes to manicures, waxing, massage and brows, each service is delivered with attention to detail and a commitment to quality.</p>
-        <a class="under-link" href="#services">Discover the treatments <span>→</span></a>
+    <section class="intro section" id="about" aria-labelledby="about-title">
+      <div class="container intro-grid">
+        <div class="section-label reveal">01 <span>About Serenity</span></div>
+        <div class="intro-copy reveal">
+          <p class="eyebrow">Internationally qualified beauty therapist</p>
+          <h2 id="about-title">A calm, personal approach to <em>professional beauty.</em></h2>
+          <p>
+            Serenity Health & Beauty offers a considered range of beauty and skincare treatments, from everyday grooming to specialist lash and skin services.
+          </p>
+          <p>
+            With <strong>28 years' experience</strong> as a beauty therapist and <strong>14 years of lashing experience</strong>, the focus is on quality, care and results that complement each client.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="services" class="services section">
-      <div class="section-heading">
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Treatments</p>
+            <h2 id="services-title">Thoughtful care from <em>skin to lashes.</em></h2>
+          </div>
+          <p>Choose from a versatile range of treatments designed around professional care and quality products.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <div class="icon">✧</div>
+            <h3>Manicures & Pedicures</h3>
+            <p>Professional nail care for hands and feet with a polished, cared-for finish.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <div class="icon">◌</div>
+            <h3>Skin Technology Facials</h3>
+            <p>Targeted facial treatments using NIMUE skin technology.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <div class="icon">◇</div>
+            <h3>Chemical Peels & Microneedling</h3>
+            <p>Advanced skin-focused treatments for clients seeking professional skincare.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <div class="icon">⌁</div>
+            <h3>Waxing</h3>
+            <p>Careful professional waxing as part of a complete beauty routine.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">05</span>
+            <div class="icon">✿</div>
+            <h3>Massage Techniques</h3>
+            <p>Various massage techniques delivered in a calm, attentive setting.</p>
+          </article>
+
+          <article class="service-card featured reveal">
+            <span class="service-number">06</span>
+            <div class="icon">◒</div>
+            <h3>Lash Lifting & Tinting</h3>
+            <p>Enhance the natural appearance of the lashes with professional lash treatments.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">07</span>
+            <div class="icon">≈</div>
+            <h3>Microblading</h3>
+            <p>Detailed brow work for a defined, carefully shaped appearance.</p>
+          </article>
+
+          <article class="service-card featured reveal">
+            <span class="service-number">08</span>
+            <div class="icon">⌁</div>
+            <h3>Professional Eyelash Extensions</h3>
+            <p>Professional extensions with an emphasis on proper isolation and protecting natural lashes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quality section" id="experience" aria-labelledby="quality-title">
+      <div class="container quality-grid">
+        <div class="quality-visual reveal">
+          <img src="assets/lash-detail.jpg" alt="Close-up of a professionally styled lash and blue eye">
+          <div class="quality-tag">
+            <span>14</span>
+            <small>years of<br>lashing</small>
+          </div>
+        </div>
+
+        <div class="quality-copy reveal">
+          <p class="eyebrow">Why quality matters</p>
+          <h2 id="quality-title">Careful workmanship, <em>beautifully done.</em></h2>
+          <p>
+            The original Serenity artwork highlights a clear commitment to quality products, professional application and protecting the natural lashes.
+          </p>
+
+          <ul class="quality-list">
+            <li>
+              <span>◇</span>
+              <div><strong>Premium imported products</strong><small>Selected with quality in mind.</small></div>
+            </li>
+            <li>
+              <span>✓</span>
+              <div><strong>Medical-grade formaldehyde-free adhesive</strong><small>Specified in the business's lash offering.</small></div>
+            </li>
+            <li>
+              <span>⌁</span>
+              <div><strong>Proper isolation</strong><small>Quality workmanship designed to avoid unnecessary damage to natural lashes.</small></div>
+            </li>
+          </ul>
+
+          <div class="signature">Choose quality! <span>♡</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="gallery-head reveal">
+          <p class="eyebrow">The Serenity look</p>
+          <h2 id="gallery-title">Beauty with a <em>refined finish.</em></h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-main reveal">
+            <img src="assets/beauty-face.jpg" alt="Beauty portrait highlighting eye makeup and lashes">
+          </figure>
+          <figure class="gallery-side reveal">
+            <img src="assets/lash-detail.jpg" alt="Close-up lash detail">
+          </figure>
+          <div class="gallery-note reveal">
+            <span class="mini-mark">⌁</span>
+            <p>Experience. Quality. Care.</p>
+            <small>Professional beauty treatments with a personal touch.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta-inner reveal">
         <div>
-          <p class="kicker">TREATMENTS &amp; SERVICES</p>
-          <h2>Your beauty, <em>your ritual.</em></h2>
+          <p class="eyebrow">Ready when you are</p>
+          <h2 id="cta-title">Let's create your next <em>beautiful look.</em></h2>
         </div>
-        <p class="section-intro">A complete range of beauty treatments designed to leave you feeling polished, cared for and confident.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card large">
-          <div class="service-top"><span>01</span><b>SKIN</b></div>
-          <div class="service-symbol">◌</div>
-          <h3>Nimue Skin Technology Facials</h3>
-          <p>Professional facial treatments focused on supporting healthy-looking, refreshed skin.</p>
-          <a href="#contact">Enquire <span>↗</span></a>
-        </article>
-        <article class="service-card">
-          <div class="service-top"><span>02</span><b>ADVANCED</b></div>
-          <div class="service-symbol">◇</div>
-          <h3>Chemical Peels &amp; Microneedling</h3>
-          <p>Advanced treatment options for clients seeking targeted skincare.</p>
-          <a href="#contact">Enquire <span>↗</span></a>
-        </article>
-        <article class="service-card dark">
-          <div class="service-top"><span>03</span><b>LASHES</b></div>
-          <div class="service-symbol">⌁</div>
-          <h3>Professional Eyelash Extensions</h3>
-          <p>Tailored lash extensions with careful isolation and professional application.</p>
-          <a href="#lashes">Explore lashes <span>↗</span></a>
-        </article>
-        <article class="service-card">
-          <div class="service-top"><span>04</span><b>BROWS</b></div>
-          <div class="service-symbol">✧</div>
-          <h3>Microblading</h3>
-          <p>Defined, carefully shaped brows designed to complement your features.</p>
-          <a href="#contact">Enquire <span>↗</span></a>
-        </article>
-        <article class="service-card">
-          <div class="service-top"><span>05</span><b>BEAUTY</b></div>
-          <div class="service-symbol">♡</div>
-          <h3>Manicures &amp; Pedicures</h3>
-          <p>Professional hand and foot care for a polished finish.</p>
-          <a href="#contact">Enquire <span>↗</span></a>
-        </article>
-        <article class="service-card">
-          <div class="service-top"><span>06</span><b>BODY</b></div>
-          <div class="service-symbol">~</div>
-          <h3>Waxing &amp; Massage</h3>
-          <p>Professional waxing and a variety of massage techniques.</p>
-          <a href="#contact">Enquire <span>↗</span></a>
-        </article>
-        <article class="service-card">
-          <div class="service-top"><span>07</span><b>ENHANCE</b></div>
-          <div class="service-symbol">◉</div>
-          <h3>Lash Lifting &amp; Tinting</h3>
-          <p>Lift, define and enhance your natural lashes.</p>
-          <a href="#lashes">Explore lashes <span>↗</span></a>
-        </article>
+        <a class="btn btn-light" href="tel:+27622042388">062 204 2388 <span>↗</span></a>
       </div>
     </section>
 
-    <section id="lashes" class="lashes">
-      <div class="lash-visual">
-        <div class="lash-ring ring-a"></div><div class="lash-ring ring-b"></div>
-        <div class="lash-eye" aria-hidden="true">
-          <span class="brow"></span><span class="eye"></span><span class="iris"></span>
-          <span class="lash-strokes"></span>
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title">Make your next appointment <em>personal.</em></h2>
+          <p>
+            For enquiries and treatment information, contact Serenity Health & Beauty directly.
+          </p>
         </div>
-        <div class="lash-stamp"><b>14</b><span>YEARS<br>OF LASHING<br>EXPERIENCE</span></div>
-      </div>
-      <div class="lash-copy">
-        <p class="kicker">THE SIGNATURE SERVICE</p>
-        <h2>Lashes with <em>care.</em></h2>
-        <p>Professional eyelash extensions are a core part of the Serenity experience. The focus is on beautiful results while respecting proper isolation, application and natural-lash care.</p>
-        <div class="lash-features">
-          <div><span>01</span><b>Premium imported quality products</b></div>
-          <div><span>02</span><b>Medical-grade, formaldehyde-free adhesive</b></div>
-          <div><span>03</span><b>Proper isolation for responsible application</b></div>
-          <div><span>04</span><b>14 years of dedicated lashing experience</b></div>
+
+        <div class="contact-card reveal">
+          <a href="tel:+27622042388" class="contact-line">
+            <span class="contact-icon">☎</span>
+            <span><small>Call</small><strong>062 204 2388</strong></span>
+          </a>
+          <div class="contact-line no-link">
+            <span class="contact-icon">♡</span>
+            <span><small>Tagline</small><strong>Beauty that enhances confidence that lasts.</strong></span>
+          </div>
         </div>
-        <a class="button primary" href="https://wa.me/27622042388?text=Hi%20Serenity%20Health%20%26%20Beauty%2C%20I%27d%20like%20to%20enquire%20about%20lash%20services." target="_blank" rel="noopener">Enquire about lashes <span>↗</span></a>
-      </div>
-    </section>
-
-    <section id="care" class="care section">
-      <div class="section-heading centered">
-        <p class="kicker">WHY SERENITY</p>
-        <h2>Quality you can <em>feel.</em></h2>
-        <p>Every detail of the experience is guided by professionalism, product quality and genuine care.</p>
-      </div>
-      <div class="care-grid">
-        <div><span>01</span><h3>Experience</h3><p>28 years of beauty therapy experience and 14 years specialising in lashing.</p></div>
-        <div><span>02</span><h3>Quality</h3><p>Premium imported products selected for professional beauty treatments.</p></div>
-        <div><span>03</span><h3>Professional care</h3><p>Thoughtful application and attention to detail from consultation to treatment.</p></div>
-        <div><span>04</span><h3>Personal attention</h3><p>A calm, individual experience rather than a one-size-fits-all approach.</p></div>
-      </div>
-    </section>
-
-    <section class="quote-section">
-      <div class="quote-mark">“</div>
-      <blockquote>Choose quality.<br><em>Choose Serenity.</em></blockquote>
-      <span>HEALTH &amp; BEAUTY</span>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div>
-        <p class="kicker">LET'S TALK BEAUTY</p>
-        <h2>Ready for your next <em>Serenity</em> moment?</h2>
-        <p>Message Serenity Health &amp; Beauty to ask about treatments, availability or your next appointment.</p>
-      </div>
-      <div class="contact-card">
-        <span>CALL / WHATSAPP</span>
-        <a href="tel:+27622042388">062 204 2388</a>
-        <a class="button primary" href="https://wa.me/27622042388?text=Hi%20Serenity%20Health%20%26%20Beauty%2C%20I%27d%20like%20to%20make%20an%20appointment%20enquiry." target="_blank" rel="noopener">Start a WhatsApp enquiry ↗</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <a class="footer-logo" href="#home"><span>Serenity</span><small>Health &amp; Beauty</small></a>
-    <p>Experience. Quality. Care.</p>
-    <a href="tel:+27622042388">062 204 2388</a>
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <img src="assets/serenity-logo.png" alt="Serenity Health & Beauty logo">
+        <p>Professional beauty therapy with experience, quality and care.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Treatments</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="footer-phone" href="tel:+27622042388">062 204 2388 <span>↗</span></a>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Serenity Health & Beauty</span>
+      <span>Experience. Quality. Care.</span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
